@@ -117,10 +117,11 @@ USE_I18N = True
 USE_TZ = True
 
 
+STATIC_URL = 'LiozioMainApp/static/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'LiozioMainApp/static/'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
      BASE_DIR / 'LiozioMainApp/static/'
@@ -131,4 +132,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'LiozioMainApp/static/
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
