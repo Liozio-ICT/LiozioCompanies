@@ -1,4 +1,4 @@
 # build_files.sh
 
-pip install -r requirement.txt
+pip install -r requirements.txt
 python manage.py collectstatic
