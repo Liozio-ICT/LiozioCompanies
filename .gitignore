@@ -3,8 +3,8 @@
 *.pot
 *.pyc
 __pycache__
-db.sqlite3
-media
+# db.sqlite3
+# media
 
 # Backup files # 
 *.bak 
@@ -32,14 +32,6 @@ media
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
-# Images unused
-main_app/static/img/blog*
-main_app/static/img/services*
-main_app/static/img/home*
-main_app/static/img/solution*
-main_app/static/img/slider*
-main_app/static/img/project*
-main_app/static/img/cl*
 
 # Gradle
 .idea/**/gradle.xml
