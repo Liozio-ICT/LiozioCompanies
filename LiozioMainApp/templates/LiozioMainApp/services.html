@@ -1,20 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block meta %}
-  <meta name="DC.title" content="Liozio Companies - Driving Sustainability and Innovation, Ibadan, Nigeria">
-  <meta name="DC.description" content="Liozio Companies is a dynamic conglomerate focused on sustainability and innovation across industries.">
-  <link rel="canonical" href="https://www.lioziocompanies.com/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria">
-  <meta name="twitter:description" content="Liozio Companies is committed to sustainability and innovation in Nigeria. Learn about our projects and how we're shaping a better future.">
-  <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1724465159/refined_logo_fl9uka.png">
-  <meta name="twitter:site" content="@LiozioCompanies">
-  <link rel="alternate" href="https://www.lioziocompanies.com" hreflang="en">
+{% block meta %}
+<meta name="DC.title" content="Liozio Companies Services - Innovative Solutions for Sustainable Development">
+<meta name="DC.description" content="Explore Liozio Companies' range of services dedicated to sustainable development and innovation. From architectural design to smart car solutions, discover how our expertise drives positive change.">
+<meta name="keywords" content="Liozio Companies, services, sustainable development, architectural design, urban planning, small group work, smart car solutions, real estate development, sustainable farming, innovation, Ibadan">
+<link rel="canonical" href="https://www.lioziocompanies.com/services/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liozio Companies Services - Innovative Solutions for Sustainable Development">
+<meta name="twitter:description" content="Discover the diverse services offered by Liozio Companies, focusing on sustainable development and innovation. Learn about our architectural design, urban planning, and more.">
+<meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1724465159/refined_logo_fl9uka.png">
+<meta name="twitter:site" content="@LiozioCompanies">
+<link rel="alternate" href="https://www.lioziocompanies.com/services/" hreflang="en">
+{% endblock meta %}
+
 {% endblock meta %}
 
 
 {% block title %}
-   Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria
+Liozio Companies Services - Innovative Solutions for Sustainable Development
 {% endblock title %}
 {% block styles %}
     {% include 'LiozioMainApp/includes/_links.html' %}
@@ -60,63 +64,63 @@
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-xl-3">
-                            <a href="services.html" class="mil-service-side mil-mb-50">
-                                <h5 class="mil-mb-15 mil-accent mil-up">Architectural design</h5>
-                                <p class="mil-up">Creation of captivating and functional environments for diverse spaces.</p>
+                            <a href="#" class="mil-service-side mil-mb-50">
+                                <h5 class="mil-mb-15 mil-accent mil-up">Agricultural Solutions (Liozio Farms &amp; Foods - LFF)</h5>
+                                <p class="mil-up">Transforming agriculture through innovation and sustainability.</p>
                             </a>
-                            <a href="services.html" class="mil-service-side mil-mb-50">
-                                <h5 class="mil-mb-15 mil-up">Urban Planning</h5>
-                                <p class="mil-up">We approach projects of any scale with a comprehensive approach.</p>
+                            <a href="#" class="mil-service-side mil-mb-50">
+                                <h5 class="mil-mb-15 mil-up">Automobile Care Solutions (Liozio Solutions - TLS)</h5>
+                                <p class="mil-up">Elevating Automobile care with premium, accessible services</p>
                             </a>
-                            <a href="services.html" class="mil-service-side mil-mb-200">
-                                <h5 class="mil-mb-15 mil-up">Small Group Work</h5>
-                                <p class="mil-up">Unique composition that leaves its mark on each project, encouraging open dialogue and creativity.</p>
+                            <a href="#" class="mil-service-side mil-mb-200">
+                                <h5 class="mil-mb-15 mil-up">Real Estate Development (Liozio Real Estate Company - LREC)</h5>
+                                <p class="mil-up">Crafting modern living spaces that foster community and sustainability.</p>
                             </a>
                         </div>
                         <div class="col-xl-8">
-                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">ARCHITECTURAL DESIGN</div>
-                            <h2 class="mil-mb-30 mil-up">Transforming Ideas into Unique Spaces</h2>
-                            <p class="mil-text-22 mil-mb-30 mil-up">Our Architectural Design service goes beyond the creation of structures; It is an artistic expression that fuses functionality and aesthetics.</p>
-                            <p class="mil-up mil-mb-50">From innovative concepts to meticulous execution, our team of industry-leading architects will transform your ideas into extraordinary architectural spaces.</p>
+                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Agricultural Solutions : Liozio Farms &amp; Foods - LFF</div>
+                            <h2 class="mil-mb-30 mil-up">Transforming agriculture through innovation and sustainability.</h2>
+                            <p class="mil-text-22 mil-mb-30 mil-up"> Liozio Farms focuses on sustainable animal farming and research-driven agricultural practices. They offer high-quality livestock including chicken, turkey, cows, goats, fish, and pigs. </p>
+                            <p class="mil-up mil-mb-50">The farm is a model for addressing SDG2 - Zero Hunger, contributing to local food security through innovative farming techniques and research collaboration with the University of Ibadan.</p>
                             <div class="mil-image-simple mil-land mil-up mil-mb-100">
-                                <img loading="lazy" src="{% static "img/services/2.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                <img loading="lazy" src="{% static "img/lff_bulls.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
                             </div>
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-xl-6 mil-mb-100">
-                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">PERSONALIZED</div>
-                                    <h3 class="mil-mb-30 mil-up">Personalized design:</h3>
-                                    <p class="mil-up mil-mb-30">Each project is approached with a customized approach to ensure it reflects our clients' unique needs and visions.</p>
-                                    <p class="mil-up">Fusce fermentum velit nulla duis tempor id porta est maecenas, magnis quam sapien placerat faucibus phasellus proin aliquet, magna nostra netus volutpat parturient donec nec facilisis.</p>
+                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Automobile Care Solutions-JOOMBOW</div>
+                                    <h3 class="mil-mb-30 mil-up">The Liozio Solutions - TLS</h3>
+                                    <p class="mil-up mil-mb-30">Elevating Automobile care with premium, accessible services</p>
+                                    <p class="mil-up">TLS, under the brand JOOMBOW, provides comprehensive car care services including repair, rental, and washing. The service is designed to offer affordable, high-quality automotive solutions, aiming to improve community well-being and align with SDG3 - Good Health and Well-Being.</p>
                                 </div>
                                 <div class="col-xl-5 mil-mb-100">
                                     <div class="mil-image-simple mil-vert mil-up">
-                                        <img loading="lazy" src="{% static "img/services/3.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                        <img loading="lazy" src="{% static "img/joombow_truck.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="row flex-sm-row-reverse justify-content-between align-items-center">
                                 <div class="col-xl-6 mil-mb-100">
-                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">TECHNOLOGY</div>
-                                    <h3 class="mil-mb-30 mil-up">Innovative technology:</h3>
-                                    <p class="mil-up mil-mb-30">We use the latest tools and technologies in architec design to ensure accuracy and efficiency in each project, from conception to delivery.</p>
-                                    <p class="mil-up">Fusce fermentum velit nulla duis tempor id porta est maecenas, magnis quam sapien placerat faucibus </p>
+                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Real Estate Development</div>
+                                    <h3 class="mil-mb-30 mil-up">Liozio Real Estate Company - LREC</h3>
+                                    <p class="mil-up mil-mb-30">Crafting modern living spaces that foster community and sustainability.</p>
+                                    <p class="mil-up">LREC focuses on developing residential and mixed-use properties that promote sustainable and communal living. The Agnes project is an example, offering 3-floor, 4-bedroom terrace duplexes aimed at enhancing the standard of living in Ibadan. This aligns with SDG11 - Sustainable Cities and Communities.</p>
                                 </div>
                                 <div class="col-xl-5 mil-mb-100">
                                     <div class="mil-image-simple mil-vert mil-up">
-                                        <img loading="lazy" src="{% static "img/services/4.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                        <img loading="lazy" src="{% static "img/lrec_image_plans.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
                                     </div>
                                 </div>
                             </div>
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-xl-6 mil-mb-100">
-                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">SUSTAINABILITY</div>
-                                    <h3 class="mil-mb-30 mil-up">Integrated Sustainability:</h3>
-                                    <p class="mil-up mil-mb-30">Our approach incorporates sustainable and eco-friendly practices, ensuring that each design contributes to the well-being of the environment.</p>
-                                    <p class="mil-up">Fusce fermentum velit nulla duis tempor id porta est maecenas, magnis quam sapien placerat faucibus </p>
+                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Innovation and Startup Technology</div>
+                                    <h3 class="mil-mb-30 mil-up">Liozio Innovation &amp; Startup Technology - LIST:</h3>
+                                    <p class="mil-up mil-mb-30">Empowering entrepreneurs with resources and opportunities for growth</p>
+                                    <p class="mil-up">LIST is a startup hub dedicated to nurturing entrepreneurs and fostering innovation. It provides resources, training, and funding for startup founders, helping them grow their businesses. The hub aims to create job opportunities and economic growth, supporting SDG8 - Decent Work and Economic Growth. </p>
                                 </div>
                                 <div class="col-xl-5 mil-mb-100">
                                     <div class="mil-image-simple mil-vert mil-up">
-                                        <img loading="lazy" src="{% static "img/services/5.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                        <img loading="lazy" src="{% static "img/lioziohub.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
                                     </div>
                                 </div>
                             </div>
@@ -130,45 +134,46 @@
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-xl-5 mil-mb-100">
-                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">ANSWERS TO YOUR QUERIES</div>
-                            <h2 class="mil-light mil-up">Clarifying Common Inquiries</h2>
+                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Frequently Asked Questions</div>
+                            <h2 class="mil-light mil-up">What you might want to know...</h2>
                         </div>
                         <div class="col-xl-6 mil-mb-100">
                             <div class="mil-accordion">
                                 <div class="mil-accordion-group mil-up">
                                     <div class="mil-accordion-menu">
-                                        <h5 class="mil-light">How can I schedule a consultation for my project?</h5>
+                                        <h5 class="mil-light">How can I get involved with Liozio Companies' sustainability initiatives?</h5>
                                         <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
                                     </div>
                                     <div class="mil-accordion-content">
-                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                        <p class="mil-soft">We welcome community engagement and partnerships in our sustainability initiatives. You can get involved by reaching out to us through our contact page for collaboration opportunities, volunteering, or by joining our community events. Additionally, we offer various programs and workshops that focus on sustainable practices and innovation.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="mil-accordion-group mil-up">
                                     <div class="mil-accordion-menu">
-                                        <h5 class="mil-light">How can I join Møork's workshops?</h5>
+                                        <h5 class="mil-light">What are the benefits of Liozio Companies’ real estate developments?</h5>
                                         <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
                                     </div>
                                     <div class="mil-accordion-content">
-                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                        <p class="mil-soft"> Our real estate projects, such as The Agnes, are designed to provide modern, sustainable living spaces that foster community and enhance the quality of life. Our developments prioritize eco-friendly practices, energy efficiency, and creating spaces that support communal living. These projects align with our commitment to sustainable cities and communities.</p>
                                     </div>
                                 </div>
                                 <div class="mil-accordion-group mil-up">
                                     <div class="mil-accordion-menu">
-                                        <h5 class="mil-light">Is Møork hiring? How can I apply?</h5>
+                                        <h5 class="mil-light">What types of projects does Liozio Companies focus on?</h5>
                                         <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
                                     </div>
                                     <div class="mil-accordion-content">
-                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                        <p class="mil-soft">Liozio Companies is involved in a diverse range of projects including sustainable agriculture, automotive care, real estate development, and innovation technology. Our aim is to drive positive change and enhance community well-being through these sectors, with a focus on sustainability and cutting-edge practices.</p>
                                     </div>
                                 </div>
                                 <div class="mil-accordion-group mil-up">
                                     <div class="mil-accordion-menu">
-                                        <h5 class="mil-light">Can I subscribe to receive updates from Møork?</h5>
+                                        <h5 class="mil-light">How can startups and entrepreneurs benefit from Liozio's Innovation and Startup Technology services?</h5>
                                         <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
                                     </div>
                                     <div class="mil-accordion-content">
-                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                        <p class="mil-soft">Startups and entrepreneurs can benefit from Liozio's Innovation and Startup Technology services through access to resources, training, and funding. Our startup hub provides support in areas such as business development, mentorship, and networking opportunities. We aim to help entrepreneurs turn their innovative ideas into successful ventures, contributing to economic growth and job creation.</p>
                                     </div>
                                 </div>
                             </div>
@@ -182,36 +187,19 @@
             <div class="mil-p-200-170">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 mil-mb-30">
+                        <div class="col-xl-6 mil-mb-30 mx-auto">
                             <div class="mil-review-card">
-                                <p class="mil-text-22 mil-dark mil-mb-50">The Møork team transformed our retail space in a unique way. Now, we attract more customers than ever</p>
+                                <p class="mil-text-22 mil-dark mil-mb-50">At Liozio, we believe that true success is measured not just by financial growth, but by the positive impact we have on the world. Every project we undertake is a step towards creating a better future for all.</p>
                                 <div class="mil-card-info">
                                     <div class="mil-review-author">
-                                        <img loading="lazy" src="{% static "img/users/1.png" %}" alt="user">
+                                        <img loading="lazy" src="{% static "img/CEO.png" %}" alt="user">
                                         <div class="mil-user-name">
-                                            <h6 class="mil-mb-10">Miriane Doyle</h6>
-                                            <p class="mil-text-16">Store Owner in Marseille</p>
+                                            <h6 class="mil-mb-10">Steve Zion</h6>
+                                            <p class="mil-text-16">CEO,Liozio Companies</p>
                                         </div>
                                     </div>
                                     <svg width="54" height="36" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M54 24.0277V0H29.9723V24.0277H42.0311V36L54 24.0277ZM11.972 36L24.0277 24.0277V0H0V24.0277H11.972V36Z" fill="#D94625" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 mil-mb-30">
-                            <div class="mil-review-card">
-                                <p class="mil-text-22 mil-dark mil-mb-50">Møork's ability to combine design and functionality is amazing. Living in our new space is a daily pleasure.</p>
-                                <div class="mil-card-info">
-                                    <div class="mil-review-author">
-                                        <img loading="lazy" src="{% static "img/users/2.png" %}" alt="user">
-                                        <div class="mil-user-name">
-                                            <h6 class="mil-mb-10">Jovanović Doyle</h6>
-                                            <p class="mil-text-16">Andersson Family</p>
-                                        </div>
-                                    </div>
-                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M54 24.0277V0H29.9723V24.0277H42.0311V36L54 24.0277ZM11.972 36L24.0277 24.0277V0H0V24.0277H11.972V36Z" fill="#D94625" />
+                                        <path d="M54 24.0277V0H29.9723V24.0277H42.0311V36L54 24.0277ZM11.972 36L24.0277 24.0277V0H0V24.0277H11.972V36Z" fill="#34199B" />
                                     </svg>
                                 </div>
                             </div>

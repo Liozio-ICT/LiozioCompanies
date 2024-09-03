@@ -41,7 +41,7 @@
                             <div class="mil-banner-text">
                                 <div class="mil-suptitle mil-mb-30">Liozio Companies</div>
                                 <h1 class="mil-display-2 mil-mb-60">Innovating for a Sustainable Future.</h1>
-                                <a href="works-1.html" class="mil-btn mil-btn-border">Explore Liozio</a>
+                                <a href="{% url "about" %}" class="mil-btn mil-btn-border">Explore Liozio</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">About us</div>
                         <h2 class="mil-mb-30 mil-up">Welcome to Liozio Companies</h2>
                         <p class="mil-mb-50 mil-up"> Liozio Companies is a conglomerate driven by innovation and sustainability. Founded in January 2024, we are rooted in Ibadan, Nigeria, and are committed to developing solutions that address the United Nations Sustainable Development Goals (SDGs).</p>
-                        <div class="mil-up"><a href="about.html" class="mil-btn mil-btn-sm">Learn more</a></div>
+                        <div class="mil-up"><a href="{% url "about" %}" class="mil-btn mil-btn-sm">Learn more</a></div>
                     </div>
                     <div class="col-lg-6 mil-mb-100">
                         <div class="mil-illustration-1">
@@ -99,7 +99,7 @@
                         <div class="swiper-container mil-projects-1">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "project-details" "liozio-farms-and-foods" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/lff1.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -113,7 +113,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "project-details" "the-agnes" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/agnes.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -127,7 +127,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "project-details" "joombow" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/joombow_site.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -195,7 +195,7 @@
                         <div class="swiper-container mil-projects-2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "services" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/lff_bulls.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -208,7 +208,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "services" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/joombow_plans.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -221,7 +221,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "services" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/lrec_image_plans.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -234,7 +234,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="work.html" class="mil-project-card mil-land">
+                                    <a href="{% url "services" %}" class="mil-project-card mil-land">
                                         <div class="mil-cover-frame mil-up">
                                             <div class="mil-hover-frame">
                                                 <img loading="lazy" src="{% static "img/tech_lady.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
@@ -270,7 +270,7 @@
                         <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">OUR FOCUS</div>
                         <h2 class="mil-mb-30 mil-up">Sustainable Development, Lasting Impact</h2>
                         <p class="mil-mb-50 mil-up">At Liozio Companies, we are a dynamic, impact-oriented organization based in Ibadan, Nigeria. Our diversified portfolio focuses on creating sustainable, SDG-oriented solutions that enhance community prosperity and well-being.</p>
-                        <div class="mil-up"><a href="about.html" class="mil-btn mil-btn-sm">Learn more</a></div>
+                        <div class="mil-up"><a href="{% url "about" %}" class="mil-btn mil-btn-sm">Learn more</a></div>
                     </div>
                     <div class="col-lg-6 mil-mb-100">
                         <div class="mil-illustration-5">

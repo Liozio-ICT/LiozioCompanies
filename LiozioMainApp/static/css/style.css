@@ -294,7 +294,7 @@ h6,
   font-size: 14px;
 }
 .mil-suptitle.mil-accent {
-  color: #34199B;
+  color: #685c97;
 }
 @media (max-width: 1200px) {
   .mil-suptitle {
@@ -1269,7 +1269,7 @@ top panel
 }
 .mil-top-panel-frame .mil-top-panel .mil-logo {
   margin-right: 60px;
-  width: 100px;
+  width: 130px;
 }
 .mil-top-panel-frame .mil-top-panel .mil-logo.mil-logo-sm {
 

@@ -3,7 +3,7 @@ from django.urls import reverse # type: ignore
 from django.views.defaults import page_not_found # type: ignore
 
 # from .services import _services, sp_services
-# from .services import tabs
+from .data import projects_data
 from random import randrange
 
 # Create your views here.
@@ -43,10 +43,44 @@ def services(request):
 
 def projects(request):
     context = {
+        "projects" : projects_data,
         'active_page': 'projects',
     }
     
     return render(request, 'LiozioMainApp/projects.html', context)
+
+def project(request, slug):
+    all_projects = projects_data
+    projects_length = len(all_projects)
+    single_project = next(
+        _project for _project in projects_data if _project['slug'] == slug)
+    
+    other_projects = [
+        _project for _project in projects_data if _project['slug'] != slug
+    ]
+    
+    projects_length = len(other_projects)
+
+    def generate_proj():
+        start = randrange(0, projects_length)
+        end = start + 2  # Ensuring exactly two items are selected
+        if end <= projects_length:
+            return start, end
+        else:
+            return generate_proj()
+        
+    range_val = generate_proj()
+
+    # Select two items from the other projects
+    two_items = [other_projects[item] for item in range(range_val[0], range_val[-1])]
+    context = {
+        "project": single_project,
+        "project_content": single_project["description"].split("\n"),
+        "thumbnail": single_project['image_url'],
+        "title" : single_project['name'],
+        "projects"  : two_items
+    }
+    return render(request, 'LiozioMainApp/project_details.html', context)
 
 def contact(request):
     context = {

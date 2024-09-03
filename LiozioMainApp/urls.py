@@ -8,7 +8,7 @@ urlpatterns = [
     # path('about/<str:about_var>', views.about_more, name='about-more'),
     path('contact/', views.contact, name='contact'),
     path('services/', views.services, name='services'),
-    # path('services/<slug:slug>', views.service, name='services-detail'),
     # path('special/<slug:slug>', views.sp_service, name='services-special'),
     path('projects/', views.projects, name='projects'),
+    path('projects/<slug:slug>', views.project, name='project-detail'),
 ]

@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta %}
+  <meta name="DC.title" content="Liozio Companies - Driving Sustainability and Innovation, Ibadan, Nigeria">
+  <meta name="DC.description" content="Liozio Companies is a dynamic conglomerate focused on sustainability and innovation across industries.">
+  <link rel="canonical" href="https://www.lioziocompanies.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria">
+  <meta name="twitter:description" content="Liozio Companies is committed to sustainability and innovation in Nigeria. Learn about our projects and how we're shaping a better future.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1724465159/refined_logo_fl9uka.png">
+  <meta name="twitter:site" content="@LiozioCompanies">
+  <link rel="alternate" href="https://www.lioziocompanies.com" hreflang="en">
+{% endblock meta %}
+
+
+{% block title %}
+   Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+    <div id="smooth-wrapper" class="mil-wrapper">
+  
+    <!-- top panel -->
+    {% include 'LiozioMainApp/includes/_header.html' %}
+
+    <!-- top panel end -->
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+            <!-- banner -->
+            <div class="mil-banner-space"></div>
+            <!-- banner end -->
+
+            <!-- project head -->
+            <div class="mil-p-200-0">
+                <div class="container">
+                    <ul class="mil-breadcrumbs mil-dark mil-mb-30 mil-up">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url "projects" %}">Projects</a></li>
+                        <li><a href="#">{{title}}</a></li>
+                    </ul>
+                    <h1 class="mil-mb-100 mil-up">{{project.name}}: {{project.location}}</h1>
+                </div>
+            </div>
+            <!-- project head end -->
+
+            <!-- cover -->
+            <div class="mil-fw-image mil-up mil-mb-100">
+                <img loading="lazy" src="{% static project.image_url %}" alt="image" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+            </div>
+            <!-- cover end -->
+
+            <!-- project info -->
+            <div class="mil-p-0-200">
+                <div class="container">
+                    <div class="mil-post-info mil-mb-100 mil-up">
+                        <h6>Share:</h6>
+                        <a href="#." class="mil-text-link">Facebook</a>
+                        <a href="#." class="mil-text-link">X.com</a>
+                        <a href="#." class="mil-text-link">Pinterest</a>
+                        <a href="#." class="mil-text-link">Linkedin</a>
+                        <a href="#." class="mil-text-link">Tiktok</a>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-xl-6 mil-mb-100">
+                            <h2 class="mil-mb-50 mil-up">{{project.name}}</h2>
+                            {% for content in project_content|slice:':2'  %}
+                            <p class="mil-text-22 mil-mb-30 mil-up">{{content}}</p> 
+                            {% endfor %}
+                            {% for content in project_content|slice:'2:'  %}
+                            <p class="mil-up">{{content}}</p>
+                            {% endfor %}
+                            
+                        </div>
+                        <div class="col-xl-5 mil-mb-100">
+                            <ul class="mil-list-4">
+                                <li class="mil-up"><span>Conclusion Date:</span><span class="mil-dark">{{project.conclusion_date}}</span></li>
+                                <li class="mil-up"><span>Client:</span><span class="mil-dark">{{project.client}}</span></li>
+                                <li class="mil-up"><span>Construction Area:</span><span class="mil-dark">{{project.size}} square meters</span></li>
+                                <li class="mil-up"><span>Contractor:</span><span class="mil-dark">Nil</span></li>
+                                <li class="mil-up"><span>Category:</span><span class="mil-dark">{{project.sdg}}</span></li>
+                                <li class="mil-up"><span>Address:</span><span class="mil-dark">{{project.address}}</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            {% for img in project.other_image_url|slice:':2'  %}
+                            <div class="mil-image-simple mil-square mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static img %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-xl-12 mil-text-center mil-mb-50">
+                            <p class="mil-text-14">{{project.name}} : {{project.location}}</p>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="mil-image-simple mil-land-short mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static project.image_url %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mil-text-center mil-mb-100">
+                            <p class="mil-text-14">{{project.name}} : {{project.location}}</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-xl-12">
+                            {% for content in project_content|slice:"-2:-1"  %}
+                                <p class="mil-up mil-mb-30">{{content}}</p>
+                            {% endfor %}
+                            <p class="mil-up">{{project_content|last}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project info end -->
+
+            <!-- post navigation -->
+            <div class="mil-p-0-200">
+                <div class="container">
+                    <div class="mil-nav-frame mil-up">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <a href="{% url "project-detail" projects.0.slug %}" class="mil-post-nav">
+                                    <div class="mil-cover">
+                                        <img loading="lazy" src="{% static projects.0.image_url %}" alt="cover">
+                                    </div>
+                                    <div class="mil-descr">
+                                        <p class="mil-text-14 mil-mb-10">Prev Project</p>
+                                        <h6 class="mil-mb-10">{{projects.0.name}} <br>{{projects.0.address}}</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-6">
+                                <a href="{% url "project-detail" projects.1.slug %}" class="mil-post-nav mil-next">
+                                    <div class="mil-cover">
+                                        <img loading="lazy" src="{% static projects.1.image_url %}" alt="cover">
+                                    </div>
+                                    <div class="mil-descr">
+                                        <p class="mil-text-14 mil-mb-10">Next Project</p>
+                                        <h6 class="mil-mb-10">{{projects.1.name}} <br>{{projects.1.address}}</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- post navigation end -->
+
+            <!-- footer -->
+              <!-- footer -->
+              {% include "LiozioMainApp/includes/_footer.html" %}
+              <!-- footer end -->
+      
+      
+          </div>
+          <!-- content end -->
+      
+      </div>
+      
+        {% endblock content %}
+        {% block scripts %}
+              {% include "LiozioMainApp/includes/_scripts.html" %}
+        {% endblock scripts %}
+      
+      </html>
+      
