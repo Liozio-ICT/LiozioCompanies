@@ -143,4 +143,4 @@ GitHub.sublime-settings
 test.*
 
 # Content and Docs
-/content
+*content.*

@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta %}
+  <meta name="DC.title" content="Liozio Companies - Driving Sustainability and Innovation, Ibadan, Nigeria">
+  <meta name="DC.description" content="Liozio Companies is a dynamic conglomerate focused on sustainability and innovation across industries.">
+  <link rel="canonical" href="https://www.lioziocompanies.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria">
+  <meta name="twitter:description" content="Liozio Companies is committed to sustainability and innovation in Nigeria. Learn about our projects and how we're shaping a better future.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1724465159/refined_logo_fl9uka.png">
+  <meta name="twitter:site" content="@LiozioCompanies">
+  <link rel="alternate" href="https://www.lioziocompanies.com" hreflang="en">
+{% endblock meta %}
+
+
+{% block title %}
+   Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+  <div id="smooth-wrapper" class="mil-wrapper">
+    
+    <!-- top panel -->
+      {% include 'LiozioMainApp/includes/_header.html' %}
+    
+    <!-- top panel end -->
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+            <!-- banner -->
+            <div class="mil-banner-inner-page" style="background-image: url({% static "img/windfall.jpg" %})">
+                <div class="mil-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mil-banner-text-frame">
+                                    <div class="mil-banner-text">
+                                        <ul class="mil-breadcrumbs mil-mb-30">
+                                            <li><a href="home-5.html">Home</a></li>
+                                            <li><a href="services.html">Services</a></li>
+                                        </ul>
+                                        <h1 class="mil-light">Services</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner end -->
+
+            <!-- services -->
+            <div class="mil-p-200-100">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3">
+                            <a href="services.html" class="mil-service-side mil-mb-50">
+                                <h5 class="mil-mb-15 mil-accent mil-up">Architectural design</h5>
+                                <p class="mil-up">Creation of captivating and functional environments for diverse spaces.</p>
+                            </a>
+                            <a href="services.html" class="mil-service-side mil-mb-50">
+                                <h5 class="mil-mb-15 mil-up">Urban Planning</h5>
+                                <p class="mil-up">We approach projects of any scale with a comprehensive approach.</p>
+                            </a>
+                            <a href="services.html" class="mil-service-side mil-mb-200">
+                                <h5 class="mil-mb-15 mil-up">Small Group Work</h5>
+                                <p class="mil-up">Unique composition that leaves its mark on each project, encouraging open dialogue and creativity.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">ARCHITECTURAL DESIGN</div>
+                            <h2 class="mil-mb-30 mil-up">Transforming Ideas into Unique Spaces</h2>
+                            <p class="mil-text-22 mil-mb-30 mil-up">Our Architectural Design service goes beyond the creation of structures; It is an artistic expression that fuses functionality and aesthetics.</p>
+                            <p class="mil-up mil-mb-50">From innovative concepts to meticulous execution, our team of industry-leading architects will transform your ideas into extraordinary architectural spaces.</p>
+                            <div class="mil-image-simple mil-land mil-up mil-mb-100">
+                                <img loading="lazy" src="{% static "img/services/2.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-xl-6 mil-mb-100">
+                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">PERSONALIZED</div>
+                                    <h3 class="mil-mb-30 mil-up">Personalized design:</h3>
+                                    <p class="mil-up mil-mb-30">Each project is approached with a customized approach to ensure it reflects our clients' unique needs and visions.</p>
+                                    <p class="mil-up">Fusce fermentum velit nulla duis tempor id porta est maecenas, magnis quam sapien placerat faucibus phasellus proin aliquet, magna nostra netus volutpat parturient donec nec facilisis.</p>
+                                </div>
+                                <div class="col-xl-5 mil-mb-100">
+                                    <div class="mil-image-simple mil-vert mil-up">
+                                        <img loading="lazy" src="{% static "img/services/3.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row flex-sm-row-reverse justify-content-between align-items-center">
+                                <div class="col-xl-6 mil-mb-100">
+                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">TECHNOLOGY</div>
+                                    <h3 class="mil-mb-30 mil-up">Innovative technology:</h3>
+                                    <p class="mil-up mil-mb-30">We use the latest tools and technologies in architec design to ensure accuracy and efficiency in each project, from conception to delivery.</p>
+                                    <p class="mil-up">Fusce fermentum velit nulla duis tempor id porta est maecenas, magnis quam sapien placerat faucibus </p>
+                                </div>
+                                <div class="col-xl-5 mil-mb-100">
+                                    <div class="mil-image-simple mil-vert mil-up">
+                                        <img loading="lazy" src="{% static "img/services/4.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-xl-6 mil-mb-100">
+                                    <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">SUSTAINABILITY</div>
+                                    <h3 class="mil-mb-30 mil-up">Integrated Sustainability:</h3>
+                                    <p class="mil-up mil-mb-30">Our approach incorporates sustainable and eco-friendly practices, ensuring that each design contributes to the well-being of the environment.</p>
+                                    <p class="mil-up">Fusce fermentum velit nulla duis tempor id porta est maecenas, magnis quam sapien placerat faucibus </p>
+                                </div>
+                                <div class="col-xl-5 mil-mb-100">
+                                    <div class="mil-image-simple mil-vert mil-up">
+                                        <img loading="lazy" src="{% static "img/services/5.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- faq -->
+            <div class="mil-bg-dark mil-p-200-100">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-5 mil-mb-100">
+                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">ANSWERS TO YOUR QUERIES</div>
+                            <h2 class="mil-light mil-up">Clarifying Common Inquiries</h2>
+                        </div>
+                        <div class="col-xl-6 mil-mb-100">
+                            <div class="mil-accordion">
+                                <div class="mil-accordion-group mil-up">
+                                    <div class="mil-accordion-menu">
+                                        <h5 class="mil-light">How can I schedule a consultation for my project?</h5>
+                                        <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
+                                    </div>
+                                    <div class="mil-accordion-content">
+                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="mil-accordion-group mil-up">
+                                    <div class="mil-accordion-menu">
+                                        <h5 class="mil-light">How can I join Møork's workshops?</h5>
+                                        <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
+                                    </div>
+                                    <div class="mil-accordion-content">
+                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="mil-accordion-group mil-up">
+                                    <div class="mil-accordion-menu">
+                                        <h5 class="mil-light">Is Møork hiring? How can I apply?</h5>
+                                        <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
+                                    </div>
+                                    <div class="mil-accordion-content">
+                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="mil-accordion-group mil-up">
+                                    <div class="mil-accordion-menu">
+                                        <h5 class="mil-light">Can I subscribe to receive updates from Møork?</h5>
+                                        <div class="mil-accordion-icon"><i class="fas fa-arrow-up"></i></div>
+                                    </div>
+                                    <div class="mil-accordion-content">
+                                        <p class="mil-soft">Møork undertakes a diverse range of projects, including high-rise buildings, urban planning, interior architecture, and sustainable developments. Explore our 'Our Projects' section for insights into our portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- faq end -->
+
+            <!-- reviews -->
+            <div class="mil-p-200-170">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 mil-mb-30">
+                            <div class="mil-review-card">
+                                <p class="mil-text-22 mil-dark mil-mb-50">The Møork team transformed our retail space in a unique way. Now, we attract more customers than ever</p>
+                                <div class="mil-card-info">
+                                    <div class="mil-review-author">
+                                        <img loading="lazy" src="{% static "img/users/1.png" %}" alt="user">
+                                        <div class="mil-user-name">
+                                            <h6 class="mil-mb-10">Miriane Doyle</h6>
+                                            <p class="mil-text-16">Store Owner in Marseille</p>
+                                        </div>
+                                    </div>
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M54 24.0277V0H29.9723V24.0277H42.0311V36L54 24.0277ZM11.972 36L24.0277 24.0277V0H0V24.0277H11.972V36Z" fill="#D94625" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mil-mb-30">
+                            <div class="mil-review-card">
+                                <p class="mil-text-22 mil-dark mil-mb-50">Møork's ability to combine design and functionality is amazing. Living in our new space is a daily pleasure.</p>
+                                <div class="mil-card-info">
+                                    <div class="mil-review-author">
+                                        <img loading="lazy" src="{% static "img/users/2.png" %}" alt="user">
+                                        <div class="mil-user-name">
+                                            <h6 class="mil-mb-10">Jovanović Doyle</h6>
+                                            <p class="mil-text-16">Andersson Family</p>
+                                        </div>
+                                    </div>
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M54 24.0277V0H29.9723V24.0277H42.0311V36L54 24.0277ZM11.972 36L24.0277 24.0277V0H0V24.0277H11.972V36Z" fill="#D94625" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- reviews end -->
+
+            <!-- call to action -->
+            {% include "LiozioMainApp/includes/_cta.html" %}
+            <!-- call to action end -->
+
+
+        <!-- footer -->
+        {% include "LiozioMainApp/includes/_footer.html" %}
+        <!-- footer end -->
+
+
+    </div>
+    <!-- content end -->
+
+</div>
+
+  {% endblock content %}
+  {% block scripts %}
+        {% include "LiozioMainApp/includes/_scripts.html" %}
+  {% endblock scripts %}
+
+</html>

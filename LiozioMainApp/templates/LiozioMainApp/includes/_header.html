@@ -6,19 +6,20 @@
       <div class="container">
         <div class="mil-top-panel">
           <div class="mil-left">
-            <a class="mil-logo mil-logo-sm" href="index.html"
-              ><img loading="lazy" src="{% static "img/logolight.png" %}" alt="Liozio Companies"
+            <a class="mil-logo mil-logo-sm" href="/"
+              ><img loading="lazy" src="{% static "img/refinedlogo.png" %}" alt="Liozio Companies"
             /></a>
             <nav>
               <ul class="mil-navigation">
-                <li class="mil-current">
-                  <a href="#">Home</a>
+                <li class="{% if active_page == 'home' %}mil-current{% endif %}">
+                  <a href="/">Home</a>
                 </li>
-                <li class=""><a href="about.html">About us</a></li>
-                <li class=""><a href="services.html">Services</a></li>
-                <li class="">
-                  <a href="#.">PROJECTS</a>
+                <li class="{% if active_page == 'about' %}mil-current{% endif %}"><a href="{% url "about" %}">About us</a></li>
+                <li class="{% if active_page == 'services' %}mil-current{% endif %}"><a href="{% url "services" %}">Services</a></li>
+                <li class="{% if active_page == 'projects' %}mil-current{% endif %}">
+                  <a href="{% url "projects" %}">PROJECTS</a>
                 </li>
+                <li class="{% if active_page == 'contact' %}mil-current{% endif %}"><a href="{% url "contact" %}">Contact Us</a></li>
               </ul>
             </nav>
           </div>
@@ -27,9 +28,10 @@
               <li>
                 <a href="#.">COMPANIES</a>
                 <ul>
-                  <li><a href="#">LFF</a></li>
-                  <li><a href="#">TLS</a></li>
-                  <li><a href="#">TREC</a></li>
+                  <li><a target="_blank" href="https://lioziofarms.com/">LFF</a></li>
+                  <li><a target="_blank" href="https://joombow.com/">TLS</a></li>
+                  <li><a target="_blank" href="#">LREC</a></li>
+                  <li><a target="_blank" href="#">LIST</a></li>
                 </ul>
               </li>
             </ul>

@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block meta %}
-  <meta name="DC.title" content="Liozio Companies - Driving Sustainability and Innovation">
+  <meta name="DC.title" content="Liozio Companies - Driving Sustainability and Innovation, Ibadan, Nigeria">
   <meta name="DC.description" content="Liozio Companies is a dynamic conglomerate focused on sustainability and innovation across industries.">
   <link rel="canonical" href="https://www.lioziocompanies.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Liozio Companies - Driving Sustainability and Innovation">
-  <meta name="twitter:description" content="Liozio Companies is committed to sustainability and innovation. Learn about our projects and how we're shaping a better future.">
+  <meta name="twitter:title" content="Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria">
+  <meta name="twitter:description" content="Liozio Companies is committed to sustainability and innovation in Nigeria. Learn about our projects and how we're shaping a better future.">
   <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1724465159/refined_logo_fl9uka.png">
   <meta name="twitter:site" content="@LiozioCompanies">
   <link rel="alternate" href="https://www.lioziocompanies.com" hreflang="en">
@@ -14,617 +14,310 @@
 
 
 {% block title %}
-    Liozio Group of Companies - Engage, Enrich, Empower
+   Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria
 {% endblock title %}
 {% block styles %}
     {% include 'LiozioMainApp/includes/_links.html' %}
     
     {% endblock styles %}
   </head>
-  
   {% block content %}
   <div id="smooth-wrapper" class="mil-wrapper">
-    {% include 'LiozioMainApp/includes/_header.html' %}
     
+    <!-- top panel -->
+      {% include 'LiozioMainApp/includes/_header.html' %}
+    
+    <!-- top panel end -->
+
+    <!-- content -->
     <div id="smooth-content" class="mil-content">
-      <div class="mil-banner mil-banner-1 mil-bg-soft">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6">
-              <div class="mil-banner-text-frame">
-                <div class="mil-banner-text">
-                  <div class="mil-suptitle mil-mb-30"></div>
-                  <h1 class="mil-display-2 mil-mb-60">
-                    
-                  </h1>
-                  <a class="mil-btn mil-btn-border" href="works-1.html"
-                    ></a
-                  >
+
+        <!-- banner -->
+        <div class="mil-banner mil-banner-1 mil-bg-soft">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="mil-banner-text-frame">
+                            <div class="mil-banner-text">
+                                <div class="mil-suptitle mil-mb-30">Liozio Companies</div>
+                                <h1 class="mil-display-2 mil-mb-60">Innovating for a Sustainable Future.</h1>
+                                <a href="works-1.html" class="mil-btn mil-btn-border">Explore Liozio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="mil-banner-image-frame">
+                            <img loading="lazy" src="{% static "img/skyscraperliozio.png" %}" alt="image">
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-xl-6">
-              <div class="mil-banner-image-frame">
-                <img loading="lazy" src="{% static "img/skyscraperliozio.png" %}" alt="image" />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="mil-p-200-100">
-        <div class="container">
-          <div
-            class="row flex-sm-row-reverse justify-content-between align-items-center"
-          >
-            <div class="col-lg-5 mil-mb-100">
-              <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                About us
-              </div>
-              <h2 class="mil-mb-30 mil-up">
-               
-              </h2>
-              <p class="mil-mb-50 mil-up">
-                
-              </p>
-              <div class="mil-up">
-                <a class="mil-btn mil-btn-sm" href="about.html"
-                  ></a
-                >
-              </div>
-            </div>
-            <div class="col-lg-6 mil-mb-100">
-              <div class="mil-illustration-1">
-                <div class="mil-image-position mil-up">
-                  <div class="mil-image-frame">
-                    <img
-                      loading="lazy"
-                      src="img/home-1/2.png"
-                      alt="img"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
+        <!-- banner end -->
+
+        <!-- about -->
+        <div class="mil-p-200-100">
+            <div class="container">
+                <div class="row flex-sm-row-reverse justify-content-between align-items-center">
+                    <div class="col-lg-5 mil-mb-100">
+                        <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">About us</div>
+                        <h2 class="mil-mb-30 mil-up">Welcome to Liozio Companies</h2>
+                        <p class="mil-mb-50 mil-up"> Liozio Companies is a conglomerate driven by innovation and sustainability. Founded in January 2024, we are rooted in Ibadan, Nigeria, and are committed to developing solutions that address the United Nations Sustainable Development Goals (SDGs).</p>
+                        <div class="mil-up"><a href="about.html" class="mil-btn mil-btn-sm">Learn more</a></div>
+                    </div>
+                    <div class="col-lg-6 mil-mb-100">
+                        <div class="mil-illustration-1">
+                            <div class="mil-image-position mil-up">
+                                <div class="mil-image-frame">
+                                    <img loading="lazy" src="{% static "img/smiling_woman.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                </div>
+                            </div>
+                            <div class="mil-image-position mil-up">
+                                <div class="mil-image-frame">
+                                    <img loading="lazy" src="{% static "img/home-1/3.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mil-image-position mil-up">
-                  <div class="mil-image-frame">
-                    <img
-                      loading="lazy"
-                      src="img/home-1/3.png"
-                      alt="img"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="mil-bg-soft mil-p-200-200">
-        <div class="container mil-relative">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                
-              </div>
-              <h2 class="mil-mb-30 mil-up"></h2>
-              <p class="mil-mb-100 mil-up">
-                
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="swiper swiper-container mil-projects-1">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-1/4.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="mil-descr mil-p-0"
-                        data-swiper-parallax="-100"
-                        data-swiper-parallax-opacity="0"
-                      >
-                        <h4 class="mil-mb-10">
-                          
-                        </h4>
-                        <p class="mil-mb-20"></p>
-                        <span class="mil-btn mil-btn-sm"></span>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-1/5.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="mil-descr mil-p-0"
-                        data-swiper-parallax="-100"
-                        data-swiper-parallax-opacity="0"
-                      >
-                        <h4 class="mil-mb-10">
-                          
-                        </h4>
-                        <p class="mil-mb-20"></p>
-                        <span class="mil-btn mil-btn-sm"></span>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-1/6.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="mil-descr mil-p-0"
-                        data-swiper-parallax="-100"
-                        data-swiper-parallax-opacity="0"
-                      >
-                        <h4 class="mil-mb-10"></h4>
-                        <p class="mil-mb-20"></p>
-                        <span class="mil-btn mil-btn-sm"></span>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/projects/1.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="mil-descr mil-p-0"
-                        data-swiper-parallax="-100"
-                        data-swiper-parallax-opacity="0"
-                      >
-                        <h4 class="mil-mb-10"></h4>
-                        <p class="mil-mb-20"></p>
-                        <span class="mil-btn mil-btn-sm"></span>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide" data-swiper-parallax-scale="0.15">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/projects/2.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="mil-descr mil-p-0"
-                        data-swiper-parallax="-100"
-                        data-swiper-parallax-opacity="0"
-                      >
-                        <h4 class="mil-mb-10"></h4>
-                        <p class="mil-mb-20"></p>
-                        <span class="mil-btn mil-btn-sm"></span>
-                      </div></a
-                    >
-                  </div>
+        <!-- about end -->
+
+        <!-- projects -->
+        <div class="mil-bg-soft mil-p-200-200">
+            <div class="container mil-relative">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">CORPORATE PROJECTS</div>
+                        <h2 class="mil-mb-30 mil-up">Explore Our Projects</h2>
+                        <p class="mil-mb-100 mil-up">These projects are a testament to Liozio Companies' dedication to driving sustainability and innovation across various industries. Each project is a step forward in our mission to create prosperity and empower communities.</p>
+                    </div>
                 </div>
-              </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="swiper-container mil-projects-1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-swiper-parallax-scale="0.15">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/lff1.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-p-0" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                                            <h4 class="mil-mb-10">Awaye Farms</h4>
+                                            <p class="mil-mb-20"> Awaye Village, Egbeda, Ibadan</p>
+                                            <span class="mil-btn mil-btn-sm">View Project</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-parallax-scale="0.15">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/agnes.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-p-0" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                                            <h4 class="mil-mb-10">The Agnes</h4>
+                                            <p class="mil-mb-20">Ikolaba GRA, Ibadan.</p>
+                                            <span class="mil-btn mil-btn-sm">View Project</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-parallax-scale="0.15">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/joombow_site.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-p-0" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                                            <h4 class="mil-mb-10">JOOMBOW1</h4>
+                                            <p class="mil-mb-20">Ashi-Bodija Road, Ibadan</p>
+                                            <span class="mil-btn mil-btn-sm">View Project</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mil-slider-nav mil-position-1 mil-up">
+                    <div class="mil-nav-btn mil-prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="mil-nav-btn mil-next">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mil-slider-nav mil-position-1 mil-up">
-            <div class="mil-nav-btn mil-prev mil-prev-1">
-              <i class="fas fa-arrow-left"></i>
-            </div>
-            <div class="mil-nav-btn mil-next mil-next-1">
-              <i class="fas fa-arrow-right"></i>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="mil-bg-soft mil-p-0-150">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-lg-3 mil-mb-50">
-              <h3 class="mil-accent mil-mb-10">
-                <!-- -->
-                <span class="mil-counter" data-number="10"></span>
-              </h3>
-              <p class="mil-dark mil-mb-15"></p>
-              <p>
-                
-              </p>
+        <!-- projects end -->
+
+        <!-- counters -->
+        <div class="mil-bg-soft mil-p-0-150">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 mil-mb-50">
+                        <h3 class="mil-accent mil-mb-10">+ <span class="mil-counter" data-number="1">1</span></h3>
+                        <p class="mil-dark mil-mb-15">Years of Excellence</p>
+                        <p>Liozio Companies is just getting started, and we are already making waves in the industry. Since our inception in 2024, we are poised to become the next big thing, driving sustainability and innovation across all sectors.</p>
+                    </div>
+                    <div class="col-lg-3 mil-mb-50">
+                        <h3 class="mil-accent mil-mb-10"><span class="mil-counter" data-number="4">99</span> +</h3>
+                        <p class="mil-dark mil-mb-15">Ongoing Innovative Projects</p>
+                        <p>With a strong commitment to sustainability, Liozio Companies is leading the way with groundbreaking projects that span various industries. Our innovative approach ensures that we are not only meeting the demands of today but also shaping the future for a better tomorrow.</p>
+                    </div>
+                    <div class="col-lg-3 mil-mb-50">
+                        <h3 class="mil-accent mil-mb-10"><span class="mil-counter" data-number="10">10</span> +</h3>
+                        <p class="mil-dark mil-mb-15">Team Members</p>
+                        <p>Our diverse team of over 10 dedicated professionals is the driving force behind our success. Each member brings unique expertise and passion to our mission, enabling us to achieve remarkable results and continuously push the boundaries of innovation..</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 mil-mb-50">
-              <h3 class="mil-accent mil-mb-10">
-                <span class="mil-counter" data-number="10"></span>
-                <!-- -->
-              </h3>
-              <p class="mil-dark mil-mb-15"></p>
-              <p>
-                
-              </p>
-            </div>
-            <div class="col-lg-3 mil-mb-50">
-              <h3 class="mil-accent mil-mb-10">
-                +<span class="mil-counter" data-number="10"></span>
-                <!-- -->Pro
-              </h3>
-              <p class="mil-dark mil-mb-15"></p>
-              <p>
-               
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="mil-p-200-200">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 mil-text-center">
-              <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                
-              </div>
-              <h2 class="mil-mb-30 mil-up">
-               
-              </h2>
-              <p class="mil-mb-100 mil-up">
-               
-              </p>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="swiper swiper-container mil-projects-2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-1/7.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
+        <!-- counters end -->
+
+        <!-- projects -->
+        <div class="mil-p-200-200">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 mil-text-center">
+                        <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">INNOVATION AND INSPIRATION</div>
+                        <h2 class="mil-mb-30 mil-up">Our Businesses</h2>
+                        <p class="mil-mb-100 mil-up"> Our diversified portfolio focuses on creating sustainable, SDG-oriented solutions that enhance community prosperity and well-being.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="swiper-container mil-projects-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/lff_bulls.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-with-bg mil-inner mil-hover">
+                                            <h4 class="mil-mb-10">Liozio Farms &amp; Foods (LFF)</h4>
+                                            <p>LFF is dedicated to sustainable animal farming, with a focus on SDG2 (Zero Hunger).</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/joombow_plans.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-with-bg mil-inner mil-hover">
+                                            <h4 class="mil-mb-10">The Liozio Solutions (TLS)</h4>
+                                            <p>Trading under the brand JOOMBOW, TLS provides car care services, aligned with SDG3 (Good Health and Well-being)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/lrec_image_plans.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-with-bg mil-inner mil-hover">
+                                            <h4 class="mil-mb-10">Liozio Real Estate Company (LREC)</h4>
+                                            <p>LREC focuses on developing affordable residential properties that promote communal living, aligned with SDG3</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="work.html" class="mil-project-card mil-land">
+                                        <div class="mil-cover-frame mil-up">
+                                            <div class="mil-hover-frame">
+                                                <img loading="lazy" src="{% static "img/tech_lady.jpg" %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                            </div>
+                                        </div>
+                                        <div class="mil-descr mil-with-bg mil-inner mil-hover">
+                                            <h4 class="mil-mb-10">Liozio Innovation &amp; Startup Technology (LIST)</h4>
+                                            <p>LIST is a startup hub aimed at fostering entrepreneurship and supporting SDG8 (Decent Work and Economic Growth)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="mil-descr mil-with-bg mil-inner mil-hover">
-                        <h4 class="mil-mb-10">
-                          
-                        </h4>
-                        <p></p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-1/8.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects end -->
+
+        <!-- team -->
+            {% include "LiozioMainApp/includes/_team.html" %}
+        <!-- team end -->
+
+        <!-- partners -->
+        {% include "LiozioMainApp/includes/_partners.html" %}
+        <!-- partners end -->
+
+         <!-- about -->
+         <div class="mil-p-200-100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-5 mil-mb-100">
+                        <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">OUR FOCUS</div>
+                        <h2 class="mil-mb-30 mil-up">Sustainable Development, Lasting Impact</h2>
+                        <p class="mil-mb-50 mil-up">At Liozio Companies, we are a dynamic, impact-oriented organization based in Ibadan, Nigeria. Our diversified portfolio focuses on creating sustainable, SDG-oriented solutions that enhance community prosperity and well-being.</p>
+                        <div class="mil-up"><a href="about.html" class="mil-btn mil-btn-sm">Learn more</a></div>
+                    </div>
+                    <div class="col-lg-6 mil-mb-100">
+                        <div class="mil-illustration-5">
+                            <div class="mil-image-position mil-up">
+                                <div class="mil-image-frame">
+                                    <img loading="lazy" src="{% static "img/home-1/10.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                </div>
+                            </div>
+                            <div class="mil-image-position mil-up">
+                                <div class="mil-image-frame">
+                                    <img loading="lazy" src="{% static "img/home-1/11.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="mil-descr mil-with-bg mil-inner mil-hover">
-                        <h4 class="mil-mb-10">
-                          
-                        </h4>
-                        <p></p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-1/9.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div class="mil-descr mil-with-bg mil-inner mil-hover">
-                        <h4 class="mil-mb-10"></h4>
-                        <p></p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img
-                            loading="lazy"
-                            src="img/home-6/2.png"
-                            alt="project"
-                            data-value-1="1"
-                            data-value-2="1.1"
-                            class="mil-scale-img"
-                          />
-                        </div>
-                      </div>
-                      <div class="mil-descr mil-with-bg mil-inner mil-hover">
-                        <h4 class="mil-mb-10"></h4>
-                        <p></p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="mil-project-card mil-land" href="work.html"
-                      ><div class="mil-cover-frame mil-up">
-                        <div class="mil-hover-frame">
-                          <img loading="lazy" src="img/home-6/3.png" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img"/>
-                        </div>
-                      </div>
-                      <div class="mil-descr mil-with-bg mil-inner mil-hover">
-                        <h4 class="mil-mb-10"></h4>
-                        <p></p>
-                      </div></a
-                    >
-                  </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="mil-p-200-170 mil-bg-soft">
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 mil-text-center">
-              <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                
-              </div>
-              <h2 class="mil-mb-30 mil-up"></h2>
-              <p class="mil-mb-100 mil-up">
-                
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-lg-3 mil-mb-30">
-              <a class="mil-team-card mil-long" href="about.html"
-                ><div class="mil-cover-frame mil-up">
-                  <div class="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/1.png"
-                      alt="Team member"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
+        <!-- about end -->
+
+        <!-- call to action -->
+        <div class="mil-p-200-200 mil-bg-accent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 mil-image-frame">
+                        <img loading="lazy" src="{% static "img/smiling_woman2.jpg" %}" style="width:100%; height:100%;object-fit:cover;" alt="img" data-value-1="1" data-value-2="1.1" class="mil-img">
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="mil-suptitle mil-sm mil-light mil-mb-30 mil-up">We would Love to Hear From You!</div>
+                        <h2 class="mil-h1 mil-light mil-mb-30 mil-up">Connect with us!</h2>
+                        <p class="mil-light mil-mb-50 mil-up">At Liozio Companies, we value communication and are eager to connect with you.</p>
+                        <div class="mil-up"><a href="{% url "contact" %}" class="mil-btn mil-btn-border mil-light">Contact Us</a></div>
+                    </div>
                 </div>
-                <div class="mil-descr mil-up">
-                  <h6 class="mil-mb-10"></h6>
-                  <p></p>
-                </div></a
-              >
             </div>
-            <div class="col-sm-6 col-lg-3 mil-mb-30">
-              <a class="mil-team-card mil-long" href="about.html"
-                ><div class="mil-cover-frame mil-up">
-                  <div class="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/2.png"
-                      alt="Team member"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div class="mil-descr mil-up">
-                  <h6 class="mil-mb-10"></h6>
-                  <p></p>
-                </div></a
-              >
-            </div>
-            <div class="col-sm-6 col-lg-3 mil-mb-30">
-              <a class="mil-team-card mil-long" href="about.html"
-                ><div class="mil-cover-frame mil-up">
-                  <div class="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/3.png"
-                      alt="Team member"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div class="mil-descr mil-up">
-                  <h6 class="mil-mb-10"></h6>
-                  <p></p>
-                </div></a
-              >
-            </div>
-            <div class="col-sm-6 col-lg-3 mil-mb-30">
-              <a class="mil-team-card mil-long" href="about.html"
-                ><div class="mil-cover-frame mil-up">
-                  <div class="mil-hover-frame">
-                    <img
-                      loading="lazy"
-                      src="img/about/team-1/4.png"
-                      alt="Team member"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div class="mil-descr mil-up">
-                  <h6 class="mil-mb-10"></h6>
-                  <p></p>
-                </div></a
-              >
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="mil-bg-soft mil-p-0-170">
-        <div class="container">
-          <p class="mil-mb-100 mil-dark mil-up">
-            
-          </p>
-          <div class="row">
-            <div class="col-6 col-xl-3 mil-mb-30">
-              <div class="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/1.svg" alt="brand" />
-              </div>
-            </div>
-            <div class="col-6 col-xl-3 mil-mb-30">
-              <div class="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/2.svg" alt="brand" />
-              </div>
-            </div>
-            <div class="col-6 col-xl-3 mil-mb-30">
-              <div class="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/3.svg" alt="brand" />
-              </div>
-            </div>
-            <div class="col-6 col-xl-3 mil-mb-30">
-              <div class="mil-brand-frame mil-up">
-                <img loading="lazy" src="img/brands/4.svg" alt="brand" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mil-p-200-100">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-lg-5 mil-mb-100">
-              <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">
-                
-              </div>
-              <h2 class="mil-mb-30 mil-up">
-                
-              </h2>
-              <p class="mil-mb-50 mil-up">
-                
-              </p>
-              <div class="mil-up">
-                <a class="mil-btn mil-btn-sm" href="about.html"
-                  ></a
-                >
-              </div>
-            </div>
-            <div class="col-lg-6 mil-mb-100">
-              <div class="mil-illustration-5">
-                <div class="mil-image-position mil-up">
-                  <div class="mil-image-frame">
-                    <img
-                      loading="lazy"
-                      src="img/home-1/10.png"
-                      alt="img"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
-                </div>
-                <div class="mil-image-position mil-up">
-                  <div class="mil-image-frame">
-                    <img
-                      loading="lazy"
-                      src="img/home-1/11.png"
-                      alt="img"
-                      data-value-1="1"
-                      data-value-2="1.1"
-                      class="mil-scale-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mil-p-200-200 mil-bg-accent">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6">
-              <div class="mil-suptitle mil-sm mil-light mil-mb-30 mil-up">
-                
-              </div>
-              <h2 class="mil-h1 mil-light mil-mb-30 mil-up">
-              
-              </h2>
-              <p class="mil-light mil-mb-50 mil-up">
-               
-              </p>
-              <div class="mil-up">
-                <a
-                  class="mil-btn mil-btn-border mil-light"
-                  href="contact.html"
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {% include "LiozioMainApp/includes/_footer.html" %}
+        <!-- call to action end -->
+
+        <!-- footer -->
+          {% include "LiozioMainApp/includes/_footer.html" %}
+        <!-- footer end -->
+
+
     </div>
-  </div>
+    <!-- content end -->
+
+</div>
 
   {% endblock content %}
   {% block scripts %}

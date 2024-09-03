@@ -19,13 +19,39 @@ def error_404_view(request, exception):
 # Create Home View
 
 def index(request):
-    # tabservices = tabs
-    # tabservices_title = list(tabs.keys())
-    # context = {
-    #     "titles": tabservices_title,
-    #     "tabs": tabservices,
-    #     "title": "Home",
-    #     "link": "index"
-    # }
-    return render(request, 'LiozioMainApp/index.html')
+
+    context = {
+            'active_page': 'home',
+        }
+    
+    return render(request, 'LiozioMainApp/index.html',context)
+
+
+def about(request):
+    context = {
+        'active_page': 'about',
+    }
+    
+    return render(request, 'LiozioMainApp/about.html', context)
+
+def services(request):
+    context = {
+        'active_page': 'services',
+    }
+    
+    return render(request, 'LiozioMainApp/services.html', context)
+
+def projects(request):
+    context = {
+        'active_page': 'projects',
+    }
+    
+    return render(request, 'LiozioMainApp/projects.html', context)
+
+def contact(request):
+    context = {
+        'active_page': 'contact',
+    }
+    
+    return render(request, 'LiozioMainApp/contact.html', context)
 

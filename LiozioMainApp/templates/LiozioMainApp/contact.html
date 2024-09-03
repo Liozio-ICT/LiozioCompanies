@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta %}
+  <meta name="DC.title" content="Liozio Companies - Driving Sustainability and Innovation, Ibadan, Nigeria">
+  <meta name="DC.description" content="Liozio Companies is a dynamic conglomerate focused on sustainability and innovation across industries.">
+  <link rel="canonical" href="https://www.lioziocompanies.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria">
+  <meta name="twitter:description" content="Liozio Companies is committed to sustainability and innovation in Nigeria. Learn about our projects and how we're shaping a better future.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1724465159/refined_logo_fl9uka.png">
+  <meta name="twitter:site" content="@LiozioCompanies">
+  <link rel="alternate" href="https://www.lioziocompanies.com" hreflang="en">
+{% endblock meta %}
+
+
+{% block title %}
+   Liozio Companies - Sustainable Development &amp; Innovation in Ibadan, Nigeria
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+    <div id="smooth-wrapper" class="mil-wrapper">
+  
+    <!-- top panel -->
+    {% include 'LiozioMainApp/includes/_header.html' %}
+
+    <!-- top panel end -->
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+            <!-- banner -->
+            <div class="mil-banner-inner-page" style="background-image: url({% static "img/contact/1.png" %})">
+                <div class="mil-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mil-banner-text-frame">
+                                    <div class="mil-banner-text">
+                                        <ul class="mil-breadcrumbs mil-mb-30">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="{% url "contact" %}">Contact</a></li>
+                                        </ul>
+                                        <h1 class="mil-light">Contact us</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner end -->
+
+            <!-- contact info -->
+            <div class="mil-p-200-150">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 mil-mb-50">
+                            <h5 class="mil-mb-20">Main Office - Liozio Companies</h5>
+                            <p class="mil-mb-10">Address: <span class="mil-dark">No 3 Wole Olanipekun Crescent,Agodi GRA. <br>Ibadan, Oyo State.</span></p>
+                            <p class="mil-mb-20">Telephone: <span class="mil-dark">+234(0)9023359867</span></p>
+                            <a href="tel:+2349023359867" class="mil-link mil-accent">Contact Liozio Companies</a>
+                        </div>
+                        <div class="col-xl-4 mil-mb-50">
+                            <h5 class="mil-mb-20">Branch - Joombow 1st Office</h5>
+                            <p class="mil-mb-10">Address: <span class="mil-dark">Ashi-Bodija Road, <br>Ibadan, Oyo State.</span></p>
+                            <p class="mil-mb-20">Telephone: <span class="mil-dark">+234(0)8127785573</span></p>
+                            <a href="tel:+2348127785573" class="mil-link mil-accent">Contact this office</a>
+                        </div>
+                        <div class="col-xl-4 mil-mb-50">
+                            <h5 class="mil-mb-20">Liozio Farms &amp; Foods - Agricutural</h5>
+                            <p class="mil-mb-10">Address: <span class="mil-dark">Awaye Farms, Awaye Village,Egbeda, Ibadan, Oyo State</span></p>
+                            <p class="mil-mb-20">Telephone: <span class="mil-dark">+234(0)8028925183</span></p>
+                            <a href="tel:+15559879365" class="mil-link mil-accent">Contact this office</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact info end -->
+
+            <!-- contact -->
+            <div class="mil-p-0-100">
+                <div class="container">
+                    <div class="row flex-sm-row-reverse justify-content-center">
+                        <div class="col-lg-8 mil-text-center mil-mb-100">
+                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Get in Touch</div>
+                            <h2 class="mil-up">Reach out to us!</h2>
+                        </div>
+                        <div class="col-lg-8 mil-mb-100">
+                            <form>
+                                <div class="row">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7912.996751604449!2d3.906051593579103!3d7.4099608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103992a557ed6fc1%3A0x71aefb07d97c83b0!2sFederal%20Govt.%20Secretariat%20Ibadan%2C%20Agodi%20G.R.A.!5e0!3m2!1sen!2sng!4v1725353272100!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="mil-input mil-mb-30 mil-up" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="mil-input mil-mb-30 mil-up" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="text" class="mil-input mil-mb-30 mil-up" placeholder="Phone">
+                                    <input type="text" class="mil-input mil-mb-30 mil-up" placeholder="Subject">
+                                    <textarea name="Message" placeholder="Message" class="mil-mb-30 mil-up"></textarea>
+                                    <div class="mil-checkbox-frame mil-mb-30 mil-up">
+                                        {% comment %} <div class="mil-checkbox">
+                                            <input type="checkbox" id="checkbox">
+                                            <label for="checkbox"></label>
+                                        </div> {% endcomment %}
+                                        {% comment %} <p class="mil-text-14 mil-soft">By clicking “Submit” you Accept the <a href="#." class="mil-text-link">processing of personal data</a></p> {% endcomment %}
+                                    </div>
+                                    <div class="mil-up"><button type="submit" class="mil-btn">Submit</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact end -->
+
+            <!-- call to action -->
+            {% include "LiozioMainApp/includes/_cta.html" %}
+            <!-- call to action end -->
+
+      
+
+        <!-- footer -->
+        {% include "LiozioMainApp/includes/_footer.html" %}
+        <!-- footer end -->
+
+
+    </div>
+    <!-- content end -->
+
+</div>
+
+  {% endblock content %}
+  {% block scripts %}
+        {% include "LiozioMainApp/includes/_scripts.html" %}
+  {% endblock scripts %}
+
+</html>
