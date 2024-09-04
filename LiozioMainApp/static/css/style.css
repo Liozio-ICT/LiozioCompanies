@@ -1809,6 +1809,9 @@ counters
 illustrations
 
 ------------------------------------------- */
+.mil-image-simple2.mil-land-short {
+  padding-bottom: 120%;
+}
 .mil-image-simple {
   position: relative;
   overflow: hidden;
@@ -1839,6 +1842,17 @@ illustrations
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.mil-image-simple2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 .mil-fw-image {
