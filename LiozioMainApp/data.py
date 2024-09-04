@@ -10,9 +10,10 @@ projects_data = [
             At Awaye Farms, we focus on raising high-quality livestock such as chicken, turkey, cows, goats, fish, and pigs, all while contributing to local food security and addressing the United Nations' Sustainable Development Goal 2 - Zero Hunger.
             Our farm also serves as a model for other agricultural ventures, showcasing best practices in sustainable farming and community development."""
         ),
+        "url" : "https://lioziofarms.com/",
         "image_url": "img/lff1.jpg",
         "slug": "liozio-farms-and-foods",
-        "other_image_url" : ["img/lff1.jpg", "img/lff1.jpg", "img/lff1.jpg"],
+        "other_image_url" : ["img/lff_bulls.jpg", "img/lff_pigs.jpg", "img/lff_ram.jpg"],
         "conclusion_date": "December 2024",
         "client": "Liozio Farms",
         "size": 50000,
@@ -30,8 +31,9 @@ projects_data = [
             The Agnes is not just a residential project; it represents our commitment to creating sustainable housing solutions that improve the quality of life for our residents. 
             Completion is scheduled for November 2024, marking a significant milestone in our real estate portfolio."""
         ),
+        "url" : "#",
         "image_url": "img/agnes1.jpg",
-        "other_image_url" : ["img/agnes1.jpg", "img/agnes1.jpg", "img/agnes1.jpg"],
+        "other_image_url" : ["img/lrec_image_plans.jpg", "lrec_image_plans.jpg", "img/lrec.png"],
         "slug": "the-agnes",
         "conclusion_date": "November 2024",
         "client": "Liozio Real Estate Company",
@@ -50,8 +52,9 @@ projects_data = [
             This project contributes to the United Nations' Sustainable Development Goal 3 - Good Health and Well-Being by improving transportation reliability and reducing vehicle-related stress. 
             JOOMBOW1 is set to open its doors in October 2024, becoming a cornerstone of our automotive services division."""
         ),
+        "url" : "https://joombow.com/",
         "image_url": "img/joombow_site.jpg",
-        "other_image_url" : ["img/joombow_site.jpg", "img/joombow_site.jpg", "img/joombow_site.jpg"],
+        "other_image_url" : ["img/joombow_truck.jpg", "img/joombow_plans4.jpg", "img/joombow_plans3.jpg"],
         "slug": "joombow",
         "conclusion_date": "2nd October 2024",
         "client": "Liozio Solutions",
