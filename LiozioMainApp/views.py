@@ -89,3 +89,11 @@ def contact(request):
     
     return render(request, 'LiozioMainApp/contact.html', context)
 
+def careers(request):
+    context = {
+        "careers" : projects_data,
+        'active_page': 'careers',
+    }
+    
+    return render(request, 'LiozioMainApp/careers.html', context)
+
