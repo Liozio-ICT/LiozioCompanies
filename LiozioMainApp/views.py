@@ -5,6 +5,7 @@ from django.views.defaults import page_not_found # type: ignore
 # from .services import _services, sp_services
 from .data import projects_data
 from random import randrange
+from .careers import openings
 
 # Create your views here.
 
@@ -92,8 +93,38 @@ def contact(request):
 def careers(request):
     context = {
         "careers" : projects_data,
+        "openings" : openings,
         'active_page': 'careers',
     }
     
     return render(request, 'LiozioMainApp/careers.html', context)
+
+
+def career(request, slug):
+    single_career = next(c for c in openings if c["slug"] == slug)
+    more_careers = [c for c in openings if c["slug"] != slug]
+    def generate_two(extras):
+        extra_careers = []
+        for x in range(2):
+            extra_careers.append(extras[x])
+        return extra_careers
+
+    def break_description(desc_str):
+        desc_list = desc_str.split("\n")
+        return desc_list
+    
+    descriptions = break_description(single_career["description"])
+    extra_two = generate_two(more_careers)
+    print(extra_two)
+    
+    context = {
+        "careers" : projects_data,
+        "openings" : openings,
+        "career" : single_career,
+        'active_page': 'careers',
+        "extra_careers" : extra_two,
+        "descriptions" : descriptions
+    }
+    
+    return render(request, 'LiozioMainApp/career.html', context)
 

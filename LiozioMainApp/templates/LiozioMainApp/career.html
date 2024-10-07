@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta %}
+  <meta name="DC.title" content="Careers - Liozio Companies">
+  <meta name="DC.description" content="Get in touch with Liozio Companies to learn more about our sustainable projects, services, and innovative solutions.">
+  <link rel="canonical" href="https://www.lioziocompanies.com/contact/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liozio Companies Career Opportunities - Your Gateway to Sustainable Innovation">
+  <meta name="twitter:description" content="Contact Liozio Companies to discuss our services and projects. We're here to assist with your inquiries and provide information about our sustainable innovations.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1722347219/logolight_qtttdz.png">
+  <meta name="twitter:site" content="@LiozioCompanies">
+  <link rel="alternate" href="https://www.lioziocompanies.com/contact/" hreflang="en">
+{% endblock meta %}
+
+
+
+{% block title %}
+Liozio Comapnies Careers  - Available Career Opportunities 
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+    <div id="smooth-wrapper" class="mil-wrapper">
+  
+    <!-- top panel -->
+    {% include 'LiozioMainApp/includes/_header.html' %}
+
+    <!-- top panel end -->
+
+    <!-- content -->
+    <div id="smooth-content" class="mil-content">
+
+        <!-- banner -->
+        <div class="mil-banner-space"></div>
+        <!-- banner end -->
+
+        <!-- publication  -->
+        <div class="mil-p-200-0">
+            <div class="container">
+                <ul class="mil-breadcrumbs mil-dark mil-mb-30 mil-up">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{% url "careers" %}">Careers</a></li>
+                    <li><a href="#">{{ career.title }}</a></li>
+                </ul>
+                <h1 class="mil-mb-100 mil-up">{{career.title | upper}}</h1>
+                <div class="mil-image-simple mil-land-short mil-up mil-mb-30">
+                    <img loading="lazy" src="{% static "img/blog/9.png" %}" alt="img" data-value-1="1" data-value-2="1.1"
+                        class="mil-scale-img">
+                </div>
+                <div class="mil-post-info mil-mb-100 mil-up">
+                    <p>By: HR Liozio Comapnies</p>
+                    <p>Nov 21,</p>
+                    <p>Availability : Open</p>
+                </div>
+                <h3 class="mil-mb-50 mil-up">Liozio Companies - SDG Reimagined</h3>
+                <p class="mil-mb-30 mil-up">{{career.description}}</p>
+                {% for desc in descriptions %}
+                <p class="mil-mb-30 mil-up">{{desc}}</p>
+                
+                {% endfor %}
+                
+                <div class="mil-post-info mil-mb-100 mil-up">
+                    <h6>View also on:</h6>
+                    <a href="#." class="mil-text-link">Facebook</a>
+                    <a href="#." class="mil-text-link">X.com</a>
+                    <a href="#." class="mil-text-link">Pinterest</a>
+                    <a href="#." class="mil-text-link">Linkedin</a>
+                    <a href="#." class="mil-text-link">Tiktok</a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- publication end -->
+
+        <!-- post navigation -->
+        <div class="mil-mb-100">
+            <div class="container">
+                <div class="mil-nav-frame mil-up">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <a href="{% url "career-detail" extra_careers.0.slug %}" class="mil-post-nav">
+                                <div class="mil-cover">
+                                    <img loading="lazy" src="{% static "img/blog/1.png" %}" alt="cover">
+                                </div>
+                                <div class="mil-descr">
+                                    <p class="mil-text-14 mil-mb-10">Other Available Openings</p>
+                                    <h6 class="mil-mb-10">{{extra_careers.0.title}}
+                                    </h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-6">
+                            <a href="publication.html" class="mil-post-nav mil-next">
+                                <div class="mil-cover">
+                                    <img loading="lazy" src="{% static "img/blog/2.png" %}" alt="cover">
+                                </div>
+                                <div class="mil-descr">
+                                    <p class="mil-text-14 mil-mb-10">Other Available Openings</p>
+                                    <h6 class="mil-mb-10">{{extra_careers.0.title}}</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- post navigation end -->
+
+        
+
+        <!-- footer -->
+        {% include "LiozioMainApp/includes/_footer.html" %}
+        <!-- footer end -->
+
+    </div>
+    <!-- content end -->
+     
+</div>
+
+{% endblock content %}
+{% block scripts %}
+      {% include "LiozioMainApp/includes/_scripts.html" %}
+{% endblock scripts %}
+
+</html>
