@@ -47,6 +47,7 @@ def create_slug(list_item):
             "excerpt" : item["excerpt"],
             "title": item["title"],
             "description": item["description"],
+            "url" : "https://forms.gle/NAQXYSbcPrG7oYFAA"
         })
     return refined_openings
 
