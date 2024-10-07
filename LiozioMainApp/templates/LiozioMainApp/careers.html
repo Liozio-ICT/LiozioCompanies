@@ -82,9 +82,9 @@ Liozio Comapnies Careers  - Available Career Opportunities
                     <div class="row justify-content-between align-items-end">
                         {% for opening in openings  %}
                         <div class="col-xl-4 mil-mb-50">
-                            <a class="mil-blog-card" href="{{opening.slug}}">
+                            <a class="mil-blog-card" href="{% url "career-detail" opening.slug %}">
                             <div class="mil-cover-frame mil-up">
-                                <div class="mil-hover-frame"><img loading="lazy" src="{% static "img/blog/1.png" %}" alt="{{opening.title}}"
+                                <div class="mil-hover-frame"><img loading="lazy" src="{% static opening.image %}" alt="{{opening.title}}"
                                         data-value-1="1" data-value-2="1.1" class="mil-scale-img" /></div>
                             </div>
                             <div class="mil-descr mil-up">
