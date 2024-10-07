@@ -37,7 +37,6 @@ def create_slug(list_item):
     refined_openings = []
 
     for item in list_item:
-        image_no = randint(1, 4)
         slug = "-".join(item["title"].split(' ')).lower()
         if "(" in slug:
             new_slug = slug.split("(")
@@ -50,7 +49,7 @@ def create_slug(list_item):
             "excerpt" : item["excerpt"],
             "title": item["title"],
             "description": item["description"],
-            "image" : f"img/career{image_no}.png",
+            "image" : f"img/career{list_item.index(item) + 1}.png",
             "url" : "https://forms.gle/NAQXYSbcPrG7oYFAA"
         })
     return refined_openings
