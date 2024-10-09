@@ -47,11 +47,11 @@ Liozio Comapnies Careers  - Available Career Opportunities
                 </ul>
                 <h1 class="mil-mb-100 mil-up">{{career.title | upper}}</h1>
                 <div class="mil-image-simple mil-land-short mil-up mil-mb-30">
-                    <img loading="lazy" src="{% static career.image %}" alt="img" data-value-1="1" data-value-2="1.1"
+                    <img loading="lazy" src="{% if career.title == "Executive Assistant to the CEO" %}{% static "img/ea1.png" %}{% elif career.title == "Farm Technician(Fishery)"  %}{% static "img/fishery_career.jpg" %}{% else %}{% static career.image %}{% endif %}" alt="img" data-value-1="1" data-value-2="1.1"
                         class="mil-scale-img">
                 </div>
                 <div class="mil-post-info mil-mb-100 mil-up">
-                    <p>By: HR Liozio Comapnies</p>
+                    <p>By: HR Liozio Companies</p>
                     <p>Availability : Open</p>
                     <p>Close date : Oct 23rd, 2024</p>
                 </div>
