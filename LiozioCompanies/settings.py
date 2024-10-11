@@ -31,7 +31,7 @@ SECRET_KEY = env('SECRET_KEY')
 is_prod = os.environ.get("ENVIRONMENT", default="local") == "prod"
 DEBUG = not True
 # DEBUG = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://liozio.com/"]
 
 
 # Application definition
