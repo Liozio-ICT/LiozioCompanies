@@ -21,7 +21,7 @@ openings = [
             "availabilty" : "open",
             "date_published" : date.today(),
             "excerpt" : "",
-            "description" : ""
+            "description" : "As the Executive Assistant to the CEO, you will provide high-level administrative support, ensuring the smooth and efficient running of the CEO's office. You will manage the CEO’s calendar, coordinate meetings, handle communication, assist with strategic planning, and perform various other duties that allow the CEO to focus on growing the business.\nAbout You\n You have experience in handling various multiple projects in a fast paced environment, you have a high level of discretion, professionalism and a high attention to detail. You are proficient in Microsoft office suite with strong written and verbal communication skills. You challenge the status quo with ideas and a get-it-done mindset. You bring solutions to the table after identifying problems. You are entrepreneurial, and you work like it's your own business. Essentially, you have a passion for strategic planning and prior experience working in a dynamic environment."
         },
         {
             "title" : "Farm Technician(Fishery)",

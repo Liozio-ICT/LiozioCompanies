@@ -62,7 +62,7 @@ Liozio Comapnies Careers  - Available Career Opportunities
                 {% endfor %}
                 
                 <div class="mil-post-info mil-mb-100 mil-up">
-                    <a href="{% if career.title == "Farm Technician(Fishery)" %}https://forms.gle/WVm25kmLsMzkosMZ7{% else %} {{career.url}}{% endif %}" class="mil-btn mil-btn-border mil-text-link">Apply now</a>
+                    <a href="{% if career.title == "Farm Technician(Fishery)" %} https://forms.gle/WVm25kmLsMzkosMZ7{% elif career.title == "Executive Assistant to the CEO" %}https://forms.gle/cPEsRrugbJqERKnr7{% else %} {{career.url}}{% endif %}" class="mil-btn mil-btn-border mil-text-link">Apply now</a>
                 </div>
                 
             </div>
